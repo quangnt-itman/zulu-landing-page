@@ -1,0 +1,14 @@
+.banner {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  &-info {
+    width: 35%;
+  }
+  &-image {
+    width: 65%;
+  }
+  &-heading {
+    font-size: 35px;
+  }
+}

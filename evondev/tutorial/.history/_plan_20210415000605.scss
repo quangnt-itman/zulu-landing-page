@@ -1,0 +1,9 @@
+.plan {
+  padding-bottom: 100px;
+  &-item {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 33.33%;
+    padding: 75px 25px;
+  }
+}
