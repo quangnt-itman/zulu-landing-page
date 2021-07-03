@@ -1,0 +1,114 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.wrapper.wide {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #4E2A84;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #FF0F83;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  padding: 0 10px;
+}
+header .navbar__logo {
+  font-size: 37px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header .navbar__menu {
+  margin-left: auto;
+}
+header .navbar__menu__nav {
+  display: flex;
+}
+header .navbar__menu__nav__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 4px;
+  padding: 0 12px;
+  line-height: 2;
+  letter-spacing: 1.94px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: black;
+  line-height: 1.4;
+}
+.container {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.post-image {
+  height: 310px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+.post-category {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "bake-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-scss": "sass --watch app/styles/style.scss:public/styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quangnt-itman/bake-layout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quangnt-itman/bake-layout/issues"
+  },
+  "homepage": "https://github.com/quangnt-itman/bake-layout#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}

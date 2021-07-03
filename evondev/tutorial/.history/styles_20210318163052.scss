@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.post-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.post-item {
+  width: 30%;
+}
+.container {
+  max-width: 130px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
