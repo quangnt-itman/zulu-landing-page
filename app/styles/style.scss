@@ -1,11 +1,13 @@
 // base - vendors - helpers - layouts - components - pages - themes
-@import "./base/reset";
-@import "./base/nomalized";
-
 @import "./helpers/variable";
+
+@import "./base/reset";
+@import "./base/global";
+
 
 @import "./layouts/structure";
 @import "./layouts/header";
 @import "./layouts/banner";
+@import "./layouts/work";
 
 @import "./components/button";
