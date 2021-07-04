@@ -100,6 +100,16 @@ a {
   right: -1px;
   transform: translateX(100%) translateY(-50%);
 }
+.block-caption--left {
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+.block-caption--left:after {
+  display: none;
+}
+.block-caption--left:before {
+  transform: none;
+}
 .block-heading {
   font-size: 50px;
   font-weight: 600;
@@ -107,6 +117,12 @@ a {
 }
 .block-heading span {
   display: block;
+}
+
+.text {
+  font-weight: 300;
+  color: #a5b2c3;
+  line-height: 1.6;
 }
 
 .wrapper {
@@ -243,6 +259,22 @@ a {
   word-break: break-word;
   color: #a5b2c3;
   line-height: 1.6;
+}
+
+.intro {
+  padding-top: 160px;
+  display: flex;
+  align-items: center;
+}
+.intro > * {
+  width: 50%;
+}
+.intro-content {
+  padding-right: 130px;
+}
+.intro-description {
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .button {
