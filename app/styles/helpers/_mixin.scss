@@ -1,0 +1,30 @@
+@mixin respnsive-to($screen) {
+	@if map-has-key($map: $break-points, $key: $screen) {
+		$value: map-get(
+			$map: $break-points,
+			$key: $screen,
+		);
+		@if ($value == 576px) {
+			@media screen and (max-width: 767px) {
+				@content;
+			}
+		}
+		@if ($value == 768px) {
+			@media screen and (max-width: 991px) {
+				@content;
+			}
+		}
+		@if ($value == 992px) {
+			@media screen and (max-width: 1199px) {
+				@content;
+			}
+		}
+		@if ($value == 1200px) {
+			@media screen and (max-width: 1439px) {
+				@content;
+			}
+		}
+	} @else {
+		@warn "`{$screen}` isn't exist in breakpoints";
+	}
+}

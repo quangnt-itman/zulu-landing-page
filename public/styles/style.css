@@ -153,12 +153,15 @@ a {
   display: block;
   margin-right: 120px;
 }
+.header-nav-mobile {
+  display: none;
+}
 .header-menu {
   display: flex;
   align-items: center;
 }
 .header-menu-item:not(:first-child) {
-  margin-left: 75px;
+  margin-left: 70px;
 }
 .header-menu-link {
   color: #272e35;
@@ -171,6 +174,88 @@ a {
   margin-left: auto;
 }
 
+@media screen and (max-width: 991px) {
+  .header-nav-mobile {
+    display: block;
+    margin-left: auto;
+  }
+  .header-nav-mobile-button {
+    font-size: 2em;
+    color: #579aff;
+  }
+  .header-nav-mobile-toggle {
+    display: none;
+  }
+  .header-nav-mobile-toggle:checked ~ .header-nav-mobile-overlay {
+    display: block;
+  }
+  .header-nav-mobile-toggle:checked ~ .header-nav-mobile-box {
+    transform: translateX(0);
+  }
+  .header-nav-mobile-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1;
+    animation: fadeIn linear 0.4s;
+  }
+  .header-nav-mobile-box {
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .header-nav-mobile-box-close {
+    color: red;
+    transform: translateX(200px);
+    font-size: 1.5em;
+  }
+  .header-nav-mobile-box-menu {
+    margin-top: 20px;
+  }
+  .header-nav-mobile-box-menu-item a {
+    display: block;
+    color: #272e35;
+    transition: color 0.2s ease-in-out;
+    line-height: 2.5;
+  }
+  .header-nav-mobile-box-menu-item a:hover {
+    color: #579aff;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-auth {
+    display: none;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .banner {
   padding-top: 50px;
   display: flex;

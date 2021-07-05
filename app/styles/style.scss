@@ -1,15 +1,14 @@
 // base - vendors - helpers - layouts - components - pages - themes
 @import "./helpers/variable";
+@import "./helpers/mixin";
 
 @import "./base/reset";
 @import "./base/global";
-
 
 @import "./layouts/structure";
 @import "./layouts/header";
 @import "./layouts/banner";
 @import "./layouts/work";
 @import "./layouts/intro";
-
 
 @import "./components/button";

@@ -6,3 +6,12 @@ $color-white: #fff;
 $color-gray-dark: #272e35;
 $color-gray-blur: #a5b2c3;
 $color-gray-light: #f4f4f4;
+
+
+$break-points: (
+	'screen-1': 1440px,
+	'extra-large': 1200px,
+	'large': 992px,
+	'medium':768px,
+	'small' : 576px
+)
